@@ -51,7 +51,7 @@ if prompt := st.chat_input("Napiš něco..."):
         message_placeholder = st.empty()
         try:
             response = client.models.generate_content(
-                model='gemini-2.5-flash',
+                model='gemini-3.6-flash',
                 contents=prompt,
             )
             full_response = response.text
